@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import Navbar from "@/components/navbar/navbar";
 import useHomePage from "@/hooks/useHomePage";
+import Footer from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "TaxMachine",
@@ -22,7 +23,9 @@ export default function RootLayout({
           <Navbar {...config.navbar} />
         </header>
         <main>{children}</main>
-        <footer></footer>
+        <footer>
+          <Footer {...config.footer} />
+        </footer>
       </body>
     </html>
   );
