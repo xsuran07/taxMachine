@@ -1,3 +1,12 @@
+import MainTitle from "@/components/mainTitle/mainTitle";
+import useContactPage from "@/hooks/useContactPage";
+
 export default function ContactPage() {
-  return <div>Contact</div>;
+  const config = useContactPage();
+
+  return (
+    <div className="flex flex-col">
+      <MainTitle text={config.title} />
+    </div>
+  );
 }
