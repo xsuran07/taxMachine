@@ -1,3 +1,4 @@
+import Faq from "@/components/faq/faq";
 import MainTitle from "@/components/mainTitle/mainTitle";
 import Subtitle from "@/components/subtitle/subtitle";
 import useHomePage from "@/hooks/useHomePage";
@@ -28,6 +29,7 @@ export default function Home() {
       <Subtitle text={config.servicesSubtitle} />
 
       <Subtitle text={config.faqSubtitle} />
+      <Faq {...config.faqData} />
 
       <Subtitle text={config.reviewsSubtitle} />
     </div>
