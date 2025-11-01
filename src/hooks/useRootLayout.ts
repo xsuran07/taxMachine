@@ -1,12 +1,12 @@
 import { FooterProps } from "@/components/footer/types";
 import { NavbarProps } from "@/components/navbar/types";
 
-export interface HomePageProps {
+export interface RootLayoutProps {
   navbar: NavbarProps;
   footer: FooterProps;
 }
 
-export default function useHomePage(): HomePageProps {
+export default function useRootLayout(): RootLayoutProps {
   return {
     navbar: {
       logo: {
