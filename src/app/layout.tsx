@@ -22,7 +22,9 @@ export default function RootLayout({
         <header>
           <Navbar {...config.navbar} />
         </header>
-        <main>{children}</main>
+        <main className="container mx-auto flex min-h-screen items-start justify-center px-16 py-10">
+          {children}
+        </main>
         <footer>
           <Footer {...config.footer} />
         </footer>
