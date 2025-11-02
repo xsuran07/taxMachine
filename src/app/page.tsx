@@ -1,5 +1,6 @@
 import Faq from "@/components/faq/faq";
 import MainTitle from "@/components/mainTitle/mainTitle";
+import OfferedServices from "@/components/offeredServices/offeredServices";
 import Reviews from "@/components/reviews/reviews";
 import Subtitle from "@/components/subtitle/subtitle";
 import useHomePage from "@/hooks/useHomePage";
@@ -12,7 +13,7 @@ export default function Home() {
     <div className="flex flex-col">
       <MainTitle text={config.title} />
 
-      <div className="mb-8 flex flex-col items-center justify-center gap-4 md:flex-row">
+      <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
         <Image
           src={config.introImageSrc}
           alt="Intro image"
@@ -28,6 +29,7 @@ export default function Home() {
       </div>
 
       <Subtitle text={config.servicesSubtitle} />
+      <OfferedServices {...config.servicesData} />
 
       <Subtitle text={config.faqSubtitle} />
       <Faq {...config.faqData} />

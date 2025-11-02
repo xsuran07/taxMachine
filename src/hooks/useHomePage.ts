@@ -1,4 +1,5 @@
 import { FaqProps } from "@/components/faq/types";
+import { offeredServicesProps } from "@/components/offeredServices/types";
 import { reviewsProps } from "@/components/reviews/types";
 
 export interface HomePageProps {
@@ -6,6 +7,7 @@ export interface HomePageProps {
   introText: string[];
   introImageSrc: string;
   servicesSubtitle: string;
+  servicesData: offeredServicesProps;
   faqSubtitle: string;
   faqData: FaqProps;
   reviewsSubtitle: string;
@@ -25,6 +27,29 @@ export default function useHomePage(): HomePageProps {
     ],
     introImageSrc: "/images/home/intro.jpg",
     servicesSubtitle: "Co nabízíme",
+    servicesData: {
+      offeredServices: [
+        {
+          title: "Daňové přiznnání pro fyzické osoby",
+          imageSrc: "/images/serviceCards/naturalPersonConstructionWorker.jpg",
+          prize: "150 Kč",
+          description:
+            "Fusce molestie malesuada ultricies. Nullam sodales cursus nulla sit amet scelerisque. Integer id commodo tellus. Proin \
+          auctor diam sed elit tempus porttitor. Curabitur aliquam vel dolor vulputate accumsan. Nunc efficitur posuere velit non faucibus. \
+          Curabitur gravida a dolor ac feugiat.",
+          targetUrl: "/services/naturalPersonFull/personalInfo",
+        },
+        {
+          title: "Daňové přiznání pro příjmy ze závisle činnosti",
+          imageSrc: "/images/serviceCards/naturalPersonStudent.jpg",
+          prize: "120 Kč",
+          description:
+            "Maecenas vel posuere ex, at ullamcorper ipsum. Curabitur interdum non diam et condimentum. Vivamus ac diam dolor. \
+          Curabitur nibh massa, mollis eu volutpat id, ultrices vel leo. Suspendisse tincidunt eleifend faucibus.",
+          targetUrl: "/services/naturalPersonEmployment/personalInfo",
+        },
+      ],
+    },
     faqSubtitle: "Často kladené otázky",
     faqData: {
       faqItems: [
