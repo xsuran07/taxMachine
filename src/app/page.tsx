@@ -1,5 +1,6 @@
 import Faq from "@/components/faq/faq";
 import MainTitle from "@/components/mainTitle/mainTitle";
+import Reviews from "@/components/reviews/reviews";
 import Subtitle from "@/components/subtitle/subtitle";
 import useHomePage from "@/hooks/useHomePage";
 import Image from "next/image";
@@ -32,6 +33,7 @@ export default function Home() {
       <Faq {...config.faqData} />
 
       <Subtitle text={config.reviewsSubtitle} />
+      <Reviews {...config.reviewsData} />
     </div>
   );
 }

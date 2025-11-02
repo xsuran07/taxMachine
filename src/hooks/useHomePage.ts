@@ -1,4 +1,5 @@
 import { FaqProps } from "@/components/faq/types";
+import { reviewsProps } from "@/components/reviews/types";
 
 export interface HomePageProps {
   title: string;
@@ -8,6 +9,7 @@ export interface HomePageProps {
   faqSubtitle: string;
   faqData: FaqProps;
   reviewsSubtitle: string;
+  reviewsData: reviewsProps;
 }
 
 export default function useHomePage(): HomePageProps {
@@ -74,5 +76,43 @@ export default function useHomePage(): HomePageProps {
       ],
     },
     reviewsSubtitle: "Recenze našich klientů",
+    reviewsData: {
+      reviews: [
+        {
+          name: "Petr K.",
+          avatarImageSrc: "/images/home/avatar1.png",
+          numberOfStars: 10,
+          text: "Curabitur neque sem, tempus ac molestie vitae, pretium ut eros. Mauris blandit elit nec leo ornare pulvinar. Morbi aliquet, ligula \
+          ut suscipit cursus, leo sapien sollicitudin nibh, at auctor turpis nunc non magna. Suspendisse potenti. Donec tellus neque, luctus nec mauris \
+          vitae, fringilla sollicitudin turpis. Aliquam auctor quam vitae mauris pharetra tempor. Fusce ante massa, suscipit sed scelerisque a, dapibus \
+          convallis libero.",
+        },
+        {
+          name: "Martin. Š.",
+          avatarImageSrc: "/images/home/avatar2.png",
+          numberOfStars: 9,
+          text: "Nam quam nunc, tempus at malesuada laoreet, laoreet et est. Aliquam sit amet auctor risus, sed tincidunt neque. Fusce in eros ultricies \
+          turpis tincidunt suscipit. Phasellus sagittis mi egestas ante varius, nec elementum est sodales. Nulla quis odio posuere, convallis ante vel, \
+          maximus purus. Maecenas vel posuere ex, at ullamcorper ipsum.",
+        },
+        {
+          name: "Klára M.",
+          avatarImageSrc: "/images/home/avatar3.png",
+          numberOfStars: 8,
+          text: "Fusce molestie malesuada ultricies. Nullam sodales cursus nulla sit amet scelerisque. Integer id commodo tellus. Proin auctor diam sed \
+          elit tempus porttitor. Curabitur aliquam vel dolor vulputate accumsan. Nunc efficitur posuere velit non faucibus. Curabitur gravida a dolor ac \
+          feugiat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+        },
+        {
+          name: "Jan F.",
+          avatarImageSrc: "/images/home/avatar4.png",
+          numberOfStars: 9,
+          text: "Nam vestibulum convallis nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non feugiat erat. Proin blandit \
+          ullamcorper est, vitae aliquet sapien iaculis ac. Fusce et aliquet est, nec imperdiet lorem. Nulla et magna et sem pretium dictum. Etiam \
+          posuere est risus, a condimentum lorem mattis ut. Morbi consectetur magna sed augue ornare tincidunt. Praesent egestas auctor ultricies. \
+          Fusce vitae vehicula lectus. Praesent iaculis dolor quis nulla lobortis aliquam. ",
+        },
+      ],
+    },
   };
 }
