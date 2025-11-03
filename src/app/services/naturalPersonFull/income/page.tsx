@@ -1,3 +1,5 @@
+import IncomeForm from "@/components/forms/incomeForm/incomeForm";
+
 export default function IncomePage() {
-  return <div>Income page</div>;
+  return <IncomeForm />;
 }

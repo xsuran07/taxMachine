@@ -1,3 +1,5 @@
+import SummaryForm from "@/components/forms/summaryForm/summaryForm";
+
 export default function SummaryPage() {
-  return <div>Summary page</div>;
+  return <SummaryForm />;
 }

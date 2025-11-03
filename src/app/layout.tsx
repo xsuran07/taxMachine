@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <body>
-        <header>
+        <header className="sticky top-0 z-50">
           <Navbar {...config.navbar} />
         </header>
         <main className="container mx-auto flex min-h-screen items-start justify-center px-16 py-10">
